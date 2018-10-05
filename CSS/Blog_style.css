@@ -6,7 +6,7 @@
 }
 
 @font-face {
-	font-family: Obelix_broken;
+	font-family: 'Obelix_broken';
 	src: url(fonts/Obelix_broken.ttf);
 }
 
@@ -68,7 +68,7 @@ header, footer {
 
 header {padding: 2%;}
 #logo {
-	font-family: Obelix_broken, sans-serif;
+	font-family: 'Obelix_broken', sans-serif;
 	font-size: 2em;
 	float: left;
 	margin-right: 5%;
