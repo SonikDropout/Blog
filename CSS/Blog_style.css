@@ -22,9 +22,9 @@
 	outline: none;
 }
 
-html {height: 100%;}
-
 .right {float: right;}
+
+iframe {max-width: 100%;}
 
 body {
 	height: 100%;
@@ -37,14 +37,6 @@ body {
 }
 
 a {text-decoration: none;}
-
-/* a:hover {
-	color: #f48b8b;
-	transition: all.6s ease;
-	-moz-transition: all.6s ease;
-	-webkit-transition: all.6s ease;
-	-ms-transition: all.6s ease;
-} */
 
 a:active {color: #8ce4a6}
 
@@ -59,7 +51,9 @@ img {
 ::selection {background: #f58b8b; color:#fff}
 ::-moz-selection {background: #f58b8b; color:#fff}
 
-/* header styles */
+/*----------------------------
+ header styles
+ -----------------------------*/
 
 header, footer {
 	background-color: #fff;
@@ -67,6 +61,7 @@ header, footer {
 }
 
 header {padding: 2%;}
+
 #logo {
 	font-family: 'Obelix_broken', sans-serif;
 	font-size: 2em;
@@ -96,15 +91,13 @@ header {padding: 2%;}
 
 .submenu {
 	list-style: none;
-	opacity: 1;
-  /* transform: scaleY(0);
-  transform-origin :0 0;
-  transition: .5s ease-in-out; */
+  background-color: white;
+	visibility: hidden;
+  text-align: center;
 }
 
-.topmenu > li > a:hover .submenu {
-  opacity: 1;
-  transform: scaleY(1);
+.topmenu > li:hover .submenu {
+  visibility: visible;;
 }
 
 #search-form {
@@ -125,7 +118,9 @@ input[type=image] {
 	float: right;
 }
 
-/* main content of the page */
+/*-------------------------------
+       Main content wrapper
+ --------------------------------*/
 
 #wrapper{
   width: 80%;
@@ -133,7 +128,9 @@ input[type=image] {
   float: left;
 }
 
-/* left column */
+/* -------------------------------
+        Правая часть
+----------------------------------*/
 
 #leftCol {
   width: 65%;
@@ -143,7 +140,7 @@ input[type=image] {
 
 #leftCol article {
   width: 100%;
-  background color: #fff;
+  background-color: white;
   margin-bottom: 20px;
   float: left;
 }
